@@ -1,0 +1,80 @@
+[CHANGELOG]
+===========
+
+TETRIS
+======
+
+>>> start-date: 11.12.15
+>>> status-date: 03.02.16
+____________________________________________________
+
+
+v.1.2.4 - (8)
+===============
+
+-Fixed wrong display of Achievements in ListView with new JRE
+
+>>> end-work: 03.02.16
+
+v.1.2.3 - (7)
+===============
+
+-got rid of installer (now standalone)
+-all save locations now OS independent
+
+>>> end-work: 02.02.16
+
+v.1.2.2 - (6)
+===============
+
+-added short manual (shortcuts)
+-moved achievement save location to appdata
+
+>>> end-work: 24.01.16
+
+v.1.2.1 - (5)
+===============
+
+-Fixed error while deleting multiple lines
+-added functionality to restart with level 1 after the bonuslevel
+
+>>> end-work: 23.01.16
+
+v.1.2.0 - (4)
+===============
+
+-added Achievements
+-added particle system (plays after finished level)
+
+>>> end-work: 21.01.16
+
+v.1.1.1 - (3)
+===============
+
+-added icons to buttons
+
+>>> end-work: 11.12.15
+
+v.1.1.0 - (2)
+===============
+
+-changed inner structure 
+--> removed stone coordinates
+--> splitted blocks in categories
+--> improved move and rotate methods
+	--> if block center is at right or left border --> no rotation possible
+
+
+>>> end-work: 11.12.15
+
+v.1.0.0 - (1)
+===============
+
+-basic implementation
+--> various bugs known
+
+>>> end-work: 11.10.15
+
+____________________________________________________
+
+[/CHANGELOG]

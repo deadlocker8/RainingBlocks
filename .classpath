@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="application/RobertTests.java|logic/CopyOfBlock.java|logic/CopyOfBoard.java|logic/CopyOfStone.java" kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/_Tools"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/controlsfx(8u40)"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="class"/>
+</classpath>

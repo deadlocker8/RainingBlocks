@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneMain" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Hilfe">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#controls" text="Anleitung" />
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="Über" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox alignment="CENTER" layoutX="278.0" layoutY="105.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <AnchorPane fx:id="anchorPaneLevel" prefHeight="600.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <StackPane fx:id="stackPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <GridPane fx:id="grid" prefHeight="600.0" prefWidth="397.0" StackPane.alignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </StackPane>
+               </children></AnchorPane>
+            <Separator orientation="VERTICAL" prefHeight="200.0" HBox.hgrow="ALWAYS" />
+            <AnchorPane prefHeight="201.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ProgressBar fx:id="progressBar" layoutX="75.0" layoutY="35.0" prefHeight="18.0" prefWidth="218.0" progress="0.0" />
+                  <Label fx:id="labelProgress" alignment="CENTER" contentDisplay="CENTER" layoutX="158.0" layoutY="74.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <VBox fx:id="vbox" layoutX="87.0" layoutY="367.0" prefHeight="122.0" prefWidth="225.0" />
+                  <Label fx:id="labelLevel" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="123.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="buttonAchievements" layoutX="151.0" layoutY="516.0" mnemonicParsing="false" onAction="#buttonAchievements" text="Achievements">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <HBox fx:id="hboxLogo" alignment="CENTER_LEFT" layoutX="108.0" layoutY="218.0" prefHeight="70.0" prefWidth="182.0">
+                     <children>
+                        <ImageView fx:id="logo" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label text="Raining&#10;Blocks&#10;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
