@@ -5,6 +5,4 @@
 
 ### Description
 
-Tetris-Clone
-
---> Gameprogrammingbeleg (3. Semester)
+Tetris-Clone in JavaFX (UI is only available in german language)
